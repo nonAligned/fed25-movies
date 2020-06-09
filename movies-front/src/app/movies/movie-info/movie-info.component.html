@@ -1,0 +1,16 @@
+<div class="row bg-light mt-3">
+    <div class="col-12">
+        <h2><a [routerLink]="['/movies/', movie?._id]"
+        routerLinkActive="router-link-active">{{movie?.name}}</a> ({{movie?.year}})</h2>
+        <p>
+            {{movie?.description}}
+        </p>
+        <div class="float-left">
+            <img src="assets/images/gold_star.png">
+            {{movie?.rating}}
+        </div>
+        <div class="float-right">
+            {{movie?.duration}} mins.
+        </div>
+    </div>
+</div>

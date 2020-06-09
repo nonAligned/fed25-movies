@@ -1,0 +1,4 @@
+<div class="pl-5 mt-3">
+    <a class="mr-5 text-primary" *ngIf="!firstPage" (click)="updatePage('prev')">« Prev</a>
+    <a class="text-primary" *ngIf="!lastPage" (click)="updatePage('next')">Next »</a>
+</div>

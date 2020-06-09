@@ -1,0 +1,9 @@
+<div class="pr-5 mt-3 form-inline">
+    <label class="mr-2" for="sort">Sort By: </label>
+    <select name="sort" id="sort" class="form-control" [(ngModel)]="sort" (change)="updateSort()">
+        <option value=""></option>
+        <option value="rating">Rating</option>
+        <option value="year">Year</option>
+    </select>
+    <button class="btn btn-primary ml-2" (click)="updateSortDirection()"><span *ngIf="sortDirection == 'desc'">↓</span><span *ngIf="sortDirection == 'asc'">↑</span></button>
+</div>

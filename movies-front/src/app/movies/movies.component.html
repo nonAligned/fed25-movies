@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-12">
+        <div class="float-left">
+            <mvs-pagination [page]="parameters.page" [pageSize]="parameters.pageSize" [collectionSize]="movies.count" (pageChange)="updateParams($event)"></mvs-pagination>
+        </div>
+        <div class="float-right">
+            <mvs-sort (sortChange)="updateParams($event)"></mvs-sort>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <mvs-movie-info *ngFor="let movie of movies?.results" [movie]="movie"></mvs-movie-info>
+    </div>
+</div>

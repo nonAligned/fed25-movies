@@ -1,0 +1,27 @@
+.navbar {
+    height: 15vh;
+    box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    font-size: 1.25em;
+}
+
+.navbar-brand {
+    font-size: 1.75em;
+    padding-bottom: 0.25em;
+}
+
+.nav-bg {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.bg-custom {
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+.heading-strong {
+    font-weight: 900;
+}
+
+.heading-light {
+    font-weight: 100;
+}
